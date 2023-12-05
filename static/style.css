@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    /* CSS HEX */
+    --martinique: #3a364d;
+    --london-hue: #c2adc6;
+    --wisteria: #a150f1;
+    --spicy-pink: #806d71;
+    --woodsmoke: #111416;
+    --corduroy: #637673;
+    --bud: #ffffff;
+    --night-shadz: #b1395c;
+    font-family: 'Lato';
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: white;
+    color: white;
+}
+
+.back-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+/* Navbar Style */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 5%;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    border-bottom: solid 1px;
+}
+.brand {
+    font-size: 25px;
+    cursor: pointer;
+}
+.nav-links li {
+    list-style: none;
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    background-color: #11141677;
+    padding: 10px 15px;
+    border-radius: 25px;
+    transition: all 0.3s ease 0s;
+}
+.nav-links li a:hover {
+    background-color: var(--woodsmoke);
+}
+
+/* Main Section */
+main {
+    display: flex;
+}
+.pfp img {
+    height: 150px;
+    width: 150px;
+    border: solid 2px;
+    border-radius: 100px;
+    margin: 20px 20px 100% 20px;
+}
+.intro {
+    margin: 75px 20px 20px 20px;
+}
+.intro p {
+    padding-right: 25rem;
+    font-size: 20px;
+    font-weight: 200;
+}
+.intro i {
+    font-size: 50px;
+    cursor: pointer;
+}
+.intro a i {
+    color: white;
+}
